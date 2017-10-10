@@ -1,0 +1,181 @@
+<resources>
+
+    <style name="SplashStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/BaseColor</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FF0000</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_exit</item>
+
+    </style>
+    <!--自定义灰色线条-->
+    <style name="gray_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">#f5f5f5</item>
+    </style>
+    <!--1dp高的灰线-->
+    <style name="gray_lines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#D9D9D9</item>
+    </style>
+    <!--10dp的分割线-->
+    <style name="Ten_lines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/windowBackgroundColor</item>
+    </style>
+    <!--10dp高度的灰线-->
+    <style name="ten_gray_lines">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">#D9D9D9</item>
+    </style>
+
+
+    <!--登录注册的EditText的样式-->
+    <style name="BaseEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--登录注册的外层的layout的样式-->
+    <style name="TextInputLayoutStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bg_gray</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!--单位信息的黑色字体的TextView的样式-->
+    <style name="BlackColorWordTextView">
+        <item name="android:background">@color/white_background</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textBlackColor</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--单位信息的黑色字体后面的value的TextView的样式-->
+    <style name="BlackColorWordTextViewValue">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">end</item>
+        <item name="android:background">@color/white_background</item>
+    </style>
+    <!--添加联系人的Edit样式-->
+    <style name="EditTextStyle">
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/bg_white_rectangle</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--很长的圆角蓝色Button-->
+    <style name="BlueLongButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_blue_fillet</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white_background</item>
+    </style>
+
+    <!--个人中心的textView的样式-->
+    <style name="PersonTextViewStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:textColor">@color/textBlackColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@color/white_background</item>
+    </style>
+    <!--首页RadioButton的样式-->
+    <style name="RadioButtonStyle">
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white_background</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/textBlackColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  PopWindow的动画 -->
+    <style name="PopWindow_y_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_y_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_y_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <!--用来填补空白的控件-->
+    <style name="weight_view">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LoginEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_blue_fillet</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">@color/white_background</item>
+        <item name="android:textColor">@color/white_background</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AddMessageEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_white_rectangle</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/textBlackColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+</resources>

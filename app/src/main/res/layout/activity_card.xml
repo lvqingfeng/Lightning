@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.AddCardActivity">
+        <include layout="@layout/app_layout_title"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="个人信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/customer_name"
+                    android:hint="请输入姓名"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/gender"
+                    android:hint="请选择性别"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/birth"
+                    android:hint="请输入出生年月"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:ellipsize="middle"
+                    android:id="@+id/card_address"
+                    android:hint="请选择家庭住址"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/id_card"
+                    android:hint="请输入身份证号码"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:ellipsize="middle"
+                    android:id="@+id/card_date"
+                    android:hint="请选择身份证有限期限"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/card_term"
+                    android:hint="请输入身份证有效期限"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="银行卡信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/bank"
+                    android:hint="银行类型(如:建设银行)"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/bank_number"
+                    android:hint="银行卡号"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/bank_mobile"
+                    android:hint="柜台预留手机号"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/bank_address"
+                    android:hint="开户行(如:建设银行北京上地支行)"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/bank_city"
+                    android:hint="开户行所在城市(市县任选一个,如:北京市)"
+                    style="@style/AddMessageEditTextStyle" />
+                <Button
+                    android:id="@+id/commit"
+                    android:text="下一步"
+                    android:layout_marginBottom="20dp"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+

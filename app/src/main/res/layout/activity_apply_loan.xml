@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_background"
+        android:layout_height="match_parent"
+        tools:context="com.lightningfast.ui.activity.ApplyLoanActivity">
+        <com.lightningfast.view.BackView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="申请贷款"/>
+        <TextView
+            android:id="@+id/progress_tv"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="期望额度￥1000"
+            android:textColor="@color/textBlackColor"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="50dp">
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:thumb="@drawable/bg_blue_round"
+                android:max="50"
+                android:progress="1"
+                android:maxHeight="1dip"
+                android:minHeight="1dip"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:progressDrawable="@drawable/seekbar_style" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/textBlackColor"
+                android:text="￥1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@color/textBlackColor"
+                android:text="￥50000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            style="@style/gray_line"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/textBlackColor"
+                android:textSize="16sp"
+                android:text="分期类型"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/type"
+                android:textColor="@color/textBlackColor"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_vector_right_go"
+                android:gravity="end"
+                android:text="按天分期"
+                android:textSize="16sp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            style="@style/gray_line"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/textBlackColor"
+                android:textSize="16sp"
+                android:text="分期期数"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/stages"
+                android:textColor="@color/textBlackColor"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_vector_right_go"
+                android:gravity="end"
+                android:text="25天"
+                android:textSize="16sp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_message"
+            android:gravity="center"
+            android:background="@drawable/bg_gray_rectangle"
+            android:text="分期信息"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/commit"
+                android:text="申请贷款"
+                style="@style/BlueLongButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

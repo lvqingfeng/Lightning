@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.AddCompanyActivity">
+        <include layout="@layout/app_layout_title"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="公司信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/company_name"
+                    android:hint="请输入公司名称"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <TextView
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/business"
+                    android:hint="请选择工作年限"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/money"
+                    android:hint="请选择月收入"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:id="@+id/type"
+                    android:hint="请选择公司性质"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:id="@+id/company_address"
+                    android:hint="请选择公司地址"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="同事信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/friend_name"
+                    android:hint="同事姓名"
+                    style="@style/AddMessageEditTextStyle" />
+                <EditText
+                    android:id="@+id/friend_phone"
+                    android:hint="同事电话"
+                    style="@style/AddMessageEditTextStyle" />
+                <Button
+                    android:id="@+id/commit"
+                    android:text="下一步"
+                    android:layout_marginBottom="20dp"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

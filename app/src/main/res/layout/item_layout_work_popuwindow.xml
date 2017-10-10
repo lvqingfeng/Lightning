@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data class="WorkPopWindowBinding">
+
+    </data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#00bfff" />
+
+            <Button
+                android:id="@+id/item_work_first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="合资企业"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/gray_line" />
+
+            <Button
+                android:id="@+id/item_work_two"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="私人企业"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/gray_line" />
+
+            <Button
+                android:id="@+id/item_work_three"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="外资企业"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+            <View
+                style="@style/gray_line" />
+            <Button
+                android:id="@+id/item_work_four"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="国有企业"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+            <View
+                style="@style/gray_line" />
+
+            <Button
+                android:id="@+id/item_work_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="取消"
+                android:textColor="#585858"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.manager.activity.LoanUserActivity">
+        <include layout="@layout/app_layout_title"/>
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:background="@color/windowBackgroundColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edit_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    android:gravity="left"
+                    android:hint="备注信息"
+                    android:minLines="3"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="10dp" />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16sp"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:textColor="@color/textBlackColor"
+                    android:background="@color/white_background"
+                    android:padding="10dp"
+                    android:hint="位置"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

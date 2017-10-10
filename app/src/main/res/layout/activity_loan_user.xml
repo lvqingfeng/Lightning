@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.manager.activity.LoanUserActivity">
+
+        <include layout="@layout/app_layout_title" />
+        <LinearLayout
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:background="@color/white_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/shenqing"
+                android:gravity="center"
+                android:text="申请中"
+                android:textColor="@color/BaseColor"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/jiekuan"
+                android:gravity="center"
+                android:text="已借款"
+                android:textColor="@color/textBlackColor"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/yuqi"
+                android:gravity="center"
+                android:text="已逾期"
+                android:textColor="@color/textBlackColor"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+            <View
+                android:id="@+id/view_1"
+                android:background="@color/BaseColor"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/view_2"
+                android:background="@color/white_background"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <View
+                android:id="@+id/view_3"
+                android:background="@color/white_background"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:id="@+id/toolbar_tab"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:background="#ffffff"-->
+            <!--android:fillViewport="false"-->
+            <!--app:layout_scrollFlags="scroll"-->
+            <!--app:tabIndicatorColor="@color/BaseColor"-->
+            <!--app:tabIndicatorHeight="1.0dp"-->
+            <!--app:tabMode="fixed"-->
+            <!--app:tabSelectedTextColor="@color/BaseColor"-->
+            <!--app:tabTextColor="@color/textBlackColor">-->
+
+        <!--</android.support.design.widget.TabLayout>-->
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/view_pager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+    </LinearLayout>
+</layout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_size">8dp</dimen>
+    <dimen name="title_back_margin">9dp</dimen>
+</resources>

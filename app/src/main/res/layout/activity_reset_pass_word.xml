@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.manager.activity.MannerLoginActivity">
+        <com.lightningfast.view.BackView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="修改密码"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@color/BaseColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/logo"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/old_password"
+                    style="@style/LoginEditTextStyle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_vector_password"
+                    android:drawablePadding="15dp"
+                    android:hint="请输入旧密码"
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
+
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/plain"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+                <EditText
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/new_password"
+                    android:maxLength="16"
+                    style="@style/LoginEditTextStyle"
+                    android:drawablePadding="15dp"
+                    android:drawableLeft="@drawable/ic_vector_password"
+                    android:inputType="textPassword"
+                    android:hint="请输入新密码" />
+                <View
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/plain"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"/>
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/bg_white_rectangle"
+                    android:text="确\u3000认"
+                    android:textColor="@color/textBlueColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

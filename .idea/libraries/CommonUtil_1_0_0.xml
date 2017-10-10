@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="CommonUtil-1.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/4d5d4d468aa5dd8fb0376c99270c27fd14449cfb/output/jars/libs/BASE64Decoder.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4d5d4d468aa5dd8fb0376c99270c27fd14449cfb/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/4d5d4d468aa5dd8fb0376c99270c27fd14449cfb/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4d5d4d468aa5dd8fb0376c99270c27fd14449cfb/output/jars/libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.abrahamcaijin.commonutil/CommonUtil/1.0.0/b8a96d2bd571a3cd5faa9f0a0b9de1d882b6ab0a/CommonUtil-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

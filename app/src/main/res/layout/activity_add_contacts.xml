@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.AddContactsActivity">
+
+        <include layout="@layout/app_layout_title"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="直系亲属"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/name_f"
+                    android:hint="请输入姓名"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/phone_f"
+                    android:hint="请输入电话"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/relationship_f"
+                    android:hint="请选择关系"
+                    style="@style/AddMessageEditTextStyle" />
+                <View
+                    android:background="@color/white_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="直系亲属"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/name_s"
+                    android:hint="请输入姓名"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/phone_s"
+                    android:hint="请输入电话"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/relationship_s"
+                    android:hint="请选择关系"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <View
+                    android:background="@color/white_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="其他联系人"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/name_t"
+                    android:hint="请输入姓名"
+                    style="@style/AddMessageEditTextStyle" />
+
+                <EditText
+                    android:id="@+id/phone_t"
+                    android:hint="请输入电话"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:id="@+id/relationship_t"
+                    android:hint="请选择关系"
+                    style="@style/AddMessageEditTextStyle" />
+                <Button
+                    android:id="@+id/commit"
+                    android:text="完\u3000成"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
+
+

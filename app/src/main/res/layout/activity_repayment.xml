@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/windowBackgroundColor"
+        tools:context="com.lightningfast.ui.activity.RepaymentActivity">
+        <com.lightningfast.view.BackView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="我要还款" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/BaseColor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/money_total"
+                    android:textSize="22sp"
+                    android:singleLine="true"
+                    android:text="0/0"
+                    android:textColor="@color/white_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white_background"
+                    android:textSize="14sp"
+                    android:text="剩余/总(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/plain"
+                android:layout_width="1px"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/money_repayment"
+                    android:textSize="22sp"
+                    android:text="0/0"
+                    android:textColor="@color/white_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white_background"
+                    android:textSize="14sp"
+                    android:text="剩余/总(期)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:id="@+id/repayment"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/white_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="选择要还款的期数"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/periods"
+                    android:text="1期"
+                    android:textColor="@color/textBlackColor"
+                    android:textSize="16sp"
+                    android:gravity="end|center_vertical"
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:text="立即还款"
+                    android:id="@+id/commit"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

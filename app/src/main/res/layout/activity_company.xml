@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.CompanyActivity">
+
+        <com.lightningfast.view.BackView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="单位信息" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/windowBackgroundColor"
+                android:orientation="vertical">
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="公司信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/BlackColorWordTextView"
+                        android:text="公司名称" />
+
+                    <TextView
+                        android:id="@+id/company_name"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="公司性质" />
+
+                    <TextView
+                        android:id="@+id/company_nature"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="工作年限" />
+
+                    <TextView
+                        android:id="@+id/work_years"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="联系人:" />
+
+                    <TextView
+                        android:id="@+id/contacts"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/BlackColorWordTextView"
+                        android:text="月  收  入" />
+
+                    <TextView
+                        android:id="@+id/salary"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="公司地址" />
+
+                    <TextView
+                        android:id="@+id/company_address"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+
+                <TextView
+                    android:background="@color/windowBackgroundColor"
+                    android:textSize="16sp"
+                    android:textColor="@color/textBlackColor"
+                    android:text="同事信息"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="同事姓名" />
+
+                    <TextView
+                        android:id="@+id/friend_name"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <View
+                    style="@style/gray_line"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/BlackColorWordTextView"
+                        android:text="同事电话" />
+
+                    <TextView
+                        android:id="@+id/friend_phone"
+                        style="@style/BlackColorWordTextViewValue" />
+                </LinearLayout>
+                <Button
+                    android:text="下一步"
+                    android:id="@+id/next_step"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

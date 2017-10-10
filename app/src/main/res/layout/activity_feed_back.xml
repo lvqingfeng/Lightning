@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.FeedBackActivity">
+        <include layout="@layout/app_layout_title"/>
+        <LinearLayout
+            android:background="@color/white_background"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_vector_wait"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:id="@+id/tv_message"
+                android:textColor="@color/BaseColor"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:text="您已申请贷款\n请耐心等待,后台正在加急处理中..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/commit"
+                android:text="确\u3000认"
+                style="@style/BlueLongButton" />
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

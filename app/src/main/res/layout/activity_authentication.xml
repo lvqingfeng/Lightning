@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackgroundColor"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.AuthenticationActivity">
+
+        <com.lightningfast.view.BackView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="实名认证" />
+
+        <ScrollView
+            android:background="@color/gray_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:background="@color/white_background"
+                android:layout_width="match_parent"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:src="@drawable/ic_vector_accout"
+                        android:id="@+id/sfz_z"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"/>
+
+                    <ImageView
+                        android:id="@+id/sfz_f"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_vector_accout" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/textBlackColor"
+                        android:gravity="center"
+                        android:text="身份证(正面)"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/textBlackColor"
+                        android:gravity="center"
+                        android:text="身份证(反面)"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/sc_sfz"
+                        android:src="@drawable/ic_vector_accout"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"/>
+                    <ImageView
+                        android:id="@+id/bank_card"
+                        android:src="@drawable/ic_vector_accout"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/textBlackColor"
+                        android:gravity="center"
+                        android:text="身份证(手持)"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/textBlackColor"
+                        android:gravity="center"
+                        android:text="银行卡"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/next_step"
+                        android:text="下一步"
+                        style="@style/BlueLongButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lightningfast">
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <!-- 读取短信 -->
+    <!-- 请求访问使用照相设备 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 百对地图所需的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 读写联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 读取通话记录 -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <application
+        android:name=".base.SDKApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+
+        <!-- 配置百度地图的AK -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8j4SIvBn3vHVtliakEE7UHZlU5BuQNlx" />
+        //key:开发者申请的Key
+        <!-- 百度地图定位的Service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 倒计时的Service -->
+        <service
+            android:name=".service.RegisterCodeTimerService"
+            android:enabled="true" />
+        <service
+            android:name=".service.DownloadService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.CompanyActivity" />
+        <activity android:name=".ui.activity.ContactsActivity" />
+        <activity android:name=".ui.activity.AddContactsActivity" />
+        <activity android:name=".ui.activity.AddCompanyActivity" />
+        <activity android:name=".ui.activity.TransactionRecordActivity" />
+        <activity android:name=".ui.manager.activity.OverdueListActivity" />
+        <activity android:name=".ui.activity.SettingActivity" />
+        <activity
+            android:name=".guide.GuidePageActivity"
+            android:theme="@style/SplashStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="lightningfast" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.AboutUsActivity" />
+        <activity android:name=".ui.activity.MyLoanActivity" />
+        <activity android:name=".ui.activity.AuthenticationActivity" />
+        <activity android:name=".ui.activity.ForgetPassWordActivity" />
+        <activity android:name=".ui.activity.PersonDataActivity" />
+        <activity android:name=".ui.activity.AddPersonDataActivity" />
+        <activity android:name=".ui.activity.NoticeActivity" />
+        <activity android:name=".ui.activity.MessageActivity" />
+        <activity android:name=".ui.activity.ApplyLoanActivity" />
+        <activity android:name=".ui.activity.AdvertisementActivity" />
+        <activity android:name=".ui.activity.AddressActivity" />
+        <activity android:name=".ui.activity.AgreementActivity" />
+        <activity android:name=".ui.activity.AddCardActivity" />
+        <activity android:name=".ui.activity.RepaymentActivity" />
+        <activity android:name=".ui.activity.RepaymentResultActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashStyle" />
+        <activity android:name=".ui.activity.FeedBackActivity" />
+        <activity android:name=".ui.activity.RepaymentDetailsActivity" />
+        <activity android:name=".ui.activity.ChooseEmployeeActivity" />
+        <activity android:name=".ui.manager.activity.MannerMainActivity" />
+        <activity android:name=".ui.manager.activity.LoanUserActivity" />
+        <activity android:name=".ui.manager.activity.AddUserActivity" />
+        <activity android:name=".imagegrid.ImageGridActivity" />
+        <activity android:name=".imagegrid.photo_show.PhotoShowActivity" />
+        <activity android:name=".ui.manager.activity.MannerLoginActivity" />
+        <activity android:name=".ui.manager.activity.ResetPassWordActivity" />
+        <activity android:name=".ui.manager.activity.MannerDataActivity" />
+        <activity android:name=".ui.activity.AddEmployeeActivity" />
+        <activity android:name=".ui.activity.CameraActivity" />
+        <activity android:name=".ui.activity.AuditActivity" />
+        <activity android:name=".newversion.NewMainActivity"/>
+    </application>
+
+</manifest>

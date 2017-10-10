@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.lightningfast.ui.activity.AddPersonDataActivity">
+        <include layout="@layout/app_layout_title"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_background"
+                android:orientation="vertical">
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/education"
+                    android:hint="请选择学历"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/marriage"
+                    android:hint="请选择婚姻状况"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/household"
+                    android:hint="请选择户籍类型"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/cars"
+                    android:hint="有无车辆"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/housing_type"
+                    android:hint="请选择住房性质"
+                    style="@style/AddMessageEditTextStyle" />
+                <TextView
+                    android:drawableRight="@drawable/ic_vector_right_go"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/address"
+                    android:hint="请选择常驻地址"
+                    style="@style/AddMessageEditTextStyle" />
+                <Button
+                    android:id="@+id/commit"
+                    android:text="下一步"
+                    style="@style/BlueLongButton" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

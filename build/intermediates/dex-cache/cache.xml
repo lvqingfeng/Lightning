@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Tongfang\.android\build-cache\ec92a3ec7390f476e61a94d7c979041f89383a9b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ccbe963151b20154ac7de09df749e9ed51fe92cc">
+        <dex dex="D:\workspace\LightningFast\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f3d6837911ea7f20a4ef734bb7c37b9d3bae2989\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\workspace\LightningFast\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6979843629435430d8b14b9250fc01c579165314">
+        <dex dex="D:\workspace\LightningFast\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_584f04d858f7027c246ad0ff8aded5f283a96365\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\workspace\LightningFast\app\libs\BaiduLBS_Android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="36e009368a0733119b7c2b353683d125ecf0afda">
+        <dex dex="D:\workspace\LightningFast\app\build\intermediates\transforms\dex\debug\folders\1000\2\BaiduLBS_Android_08c3d1ad70022ba42b1c2a1c60f9da6e21f5b7a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\workspace\LightningFast\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\workspace\LightningFast\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f0396083fd27680b034c36b78e2e0bfcfdad836c\classes.dex" />
+    </item>
+
+</items>
